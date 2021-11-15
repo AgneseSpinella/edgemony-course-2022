@@ -27,3 +27,8 @@ const render = (container, items) => {
 
     container.innerHTML = remove;
 };
+
+
+/* const li = `<li> 
+<input type="checkbox" ${element.completed ? 'checked' : ''}/>
+</li>` */

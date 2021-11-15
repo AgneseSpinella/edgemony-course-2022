@@ -24,4 +24,29 @@ document.addEventListener('DOMContentLoaded', () => {
   const list = q('ul');
   
   render(list, data);
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const value = input.value.toLowerCase();
+
+    const results= data.filter((element) => {
+      return element.name.toLowerCase().search(value) > -1
+    })
+  
+  render(list, results)
+  });
+
 });
+
+/*
+input.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const value = input.value.toLowerCase();
+
+  const results= data.filter((element, index) => {
+    element.name.toLowerCase().search(value) > -1||
+    element.email.toLowerCase().search(value) > -1 
+  })
+
+render(list, results)
+} */

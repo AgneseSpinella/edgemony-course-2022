@@ -20,10 +20,22 @@ form button {
 ul {
   list-style: none;
   padding: 0;
+
 }
+
+/* fr sta per frazione */
 
 ul li {
   border: 1px solid #ccc;
   padding: 10px;
   margin: 5px 0;
+}
+
+
+/* responsive */
+@media (min-width: 768px) {
+ ul {display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  column-gap: 10px;
+  } 
 }
