@@ -15,7 +15,7 @@ const View = (id = 0) => {
         <img src="${movie.poster}" />
         <p>${movie.description}</p>
         <hr />
-        <a href="#" id="back">Torna alla home</a>
+        <a class="pulsante" href="#" id="back">Torna alla home</a>
       </article>`
       );
     });

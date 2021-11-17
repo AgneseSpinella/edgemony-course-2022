@@ -67,6 +67,18 @@ footer {
   margin: 10px 0;
 }
 
+ul li span {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #00ced1;
+}
+
+.edit {
+  border: 0;
+  background-color: white;
+  cursor: pointer;
+}
+
 .delete {
   border: 0;
   color: #fff;
